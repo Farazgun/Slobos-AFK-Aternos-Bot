@@ -1,87 +1,88 @@
 {
   "name": "AFK Bot",
   "bot-account": {
-    "username": "Pelmeni",
+    "username": "Aternos_Bot_1",
     "password": "",
     "type": "offline"
   },
   "server": {
-    "ip": "NastiyasiePidorasi.aternos.me",
+    "ip": "pricklefish.aternos.host",
     "port": 49184,
-    "version": "",
+    "version": "1.21.11",
     "try-creative": false
   },
   "position": {
     "enabled": true,
-    "x": -41,
+    "x": -47,
     "y": 61,
     "z": -6
   },
   "utils": {
     "auto-auth": {
       "enabled": false,
-      "password": "chalol78"
+      "password": ""
     },
     "anti-afk": {
       "enabled": true,
-      "sneak": true
+      "sneak": false
     },
     "chat-messages": {
-      "enabled": true,
-      "repeat": true,
+      "enabled": false,
+      "repeat": false,
       "repeat-delay": 120,
-      "messages": [
-        "I'm a regular player",
-        "Subscribe to Slobos!",
-        "I like to play Minecraft!"
-      ]
+      "messages": []
     },
-    "chat-log": true,
+    "chat-log": false,
     "auto-reconnect": true,
-    "auto-reconnect-delay": 2000,
-    "max-reconnect-delay": 120000
+    "auto-reconnect-delay": 60000,
+    "max-reconnect-delay": 600000
   },
   "movement": {
     "enabled": true,
     "circle-walk": {
-      "enabled": true,
+      "enabled": false,
       "radius": 3,
-      "speed": 3000
+      "speed": 2000
     },
     "look-around": {
       "enabled": true,
-      "interval": 5000
+      "interval": 4000
     },
     "random-jump": {
       "enabled": true,
-      "interval": 5000
+      "interval": 2000
     }
   },
   "modules": {
-    "avoidMobs": true,
+    "avoidMobs": false,
     "combat": true,
     "beds": true,
-    "chat": true,
-    "console-commands": true
+    "chat": false,
+    "console-commands": false
   },
   "combat": {
     "attack-mobs": true,
-    "auto-eat": true
+    "auto-eat": false
   },
   "beds": {
     "pick-up-day": false,
-    "place-night": false
+    "place-night": true
   },
   "discord": {
     "enabled": false,
-    "webhookUrl": "YOUR_DISCORD_WEBHOOK_URL_HERE",
+    "webhookUrl": "",
     "events": {
-      "connect": true,
-      "disconnect": true,
+      "connect": false,
+      "disconnect": false,
       "chat": false
     }
   },
   "chat": {
-    "respond": true
+    "respond": false
+  },
+  "connection": {
+    "keep-alive": true,
+    "reconnect-on-kick": true,
+    "reconnect-on-error": true
   }
 }
