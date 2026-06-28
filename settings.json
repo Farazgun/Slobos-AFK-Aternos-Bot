@@ -8,7 +8,7 @@
   "server": {
     "ip": "pricklefish.aternos.host",
     "port": 49184,
-    "version": "1.21.11",
+    "version": "1.21.4",
     "try-creative": false
   },
   "position": {
